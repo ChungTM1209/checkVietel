@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var nums = ['0369867954', '0988567812', '0125986472', '0951235846', '03964582351'];
+    regexp = /^[0]((([9][678])|([3][2-9]))[0-9]{7})$/;
+    for (var i = 0; i < nums.length; i++) {
+        if (regexp.test(nums[i])) {
+            document.write("Vietel phonenumber: " + nums[i] + "<br>");
+        } else {
+            document.write("Not phone number: " + nums[i] + "<br>");
+        }
+    }
+
+</script>
+</body>
+</html>
